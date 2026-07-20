@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semana 5 · Fundamentos Teóricos de Scrum — Diario de Ingeniería</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <span class="brand-path"><a href="index.html">Diario de Ingeniería</a><span class="sep">/</span><span class="current">Semana 5</span></span>
+    </div>
+    <div class="crumbs">ITI · Grupo 1</div>
+  </div>
+
+  <a class="back-link" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Volver a la tabla de semanas</a>
+
+  <header class="week-header" style="--accent:var(--accent-violet)">
+    <span class="ticket-id" style="color:var(--accent-violet)">SEMANA-05 · Unidad III · Metodología Scrum</span>
+    <h1>Fundamentos Teóricos de Scrum</h1>
+    <p class="lede">El marco de trabajo Scrum de punta a punta: sus pilares, valores, roles, eventos y artefactos, según la Guía de Scrum 2020.</p>
+    <div class="week-tags"><span class="tag">Empirismo</span><span class="tag">Scrum Team</span><span class="tag">Eventos</span><span class="tag">Artefactos</span></div>
+  </header>
+
+  <div class="backlog-label">
+    Temario
+    <button id="expand-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">expandir todo</button>
+    ·
+    <button id="collapse-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">colapsar todo</button>
+  </div>
+
+  <div class="backlog">
+    <details class="story" id="tema-1" style="--accent-open:var(--accent-violet)">
+  <summary>
+    <span class="story-index">01</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>¿Qué es Scrum?</h3>
+    <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">2</span>
+  </summary>
+  <div class="story-body">
+    <p><strong>Scrum</strong> es un marco de trabajo ligero que ayuda a equipos, personas y organizaciones a generar valor mediante soluciones adaptativas para problemas complejos. Es, ante todo, un marco para trabajar mejor en proyectos complejos: su capacidad de adaptarse al cambio es uno de sus pilares, y permite entregar valor de forma continua, algo especialmente valioso en mercados que cambian rápido.</p><p>Scrum en sí mismo es simple e intencionalmente incompleto: no describe todo lo que hay que hacer, sino que da la estructura mínima para que un equipo desarrolle sus propias tácticas dentro de ese marco.</p>
+  </div>
+</details>
+<details class="story" id="tema-2" style="--accent-open:var(--accent-violet)">
+  <summary>
+    <span class="story-index">02</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Los pilares del empirismo y los valores de Scrum</h3>
+    <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+  </summary>
+  <div class="story-body">
+    <p>Scrum se basa en el <strong>empirismo</strong>: la idea de que el conocimiento surge de la experiencia y las decisiones se toman en base a lo observado, no a lo asumido. Esto se sostiene en tres pilares:</p><ul><li><strong>Transparencia:</strong> todos los aspectos relevantes del trabajo deben ser visibles para quienes son responsables del resultado.</li><li><strong>Inspección:</strong> los artefactos y el progreso deben revisarse con frecuencia para detectar desviaciones.</li><li><strong>Adaptación:</strong> si se detecta una desviación, el proceso o el material deben ajustarse lo antes posible.</li></ul><p>Y se sostiene también en cinco valores compartidos por todo el equipo:</p><table class='mini-table'><thead><tr><th>Valor</th><th>En la práctica</th></tr></thead><tbody><tr><td>Compromiso</td><td>Con los objetivos del equipo y la organización.</td></tr><tr><td>Coraje</td><td>Para hacer lo correcto y enfrentar problemas difíciles.</td></tr><tr><td>Foco</td><td>En el trabajo del Sprint y los objetivos del equipo.</td></tr><tr><td>Apertura</td><td>Sobre el trabajo realizado y los desafíos encontrados.</td></tr><tr><td>Respeto</td><td>Entre todos los miembros del equipo.</td></tr></tbody></table>
+  </div>
+</details>
+<details class="story" id="tema-3" style="--accent-open:var(--accent-violet)">
+  <summary>
+    <span class="story-index">03</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>El Scrum Team: Product Owner, Scrum Master y Developers</h3>
+    <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+  </summary>
+  <div class="story-body">
+    <p>La unidad fundamental de Scrum es un equipo pequeño de personas: el <strong>Scrum Team</strong>, compuesto por un Scrum Master, un Product Owner y los Developers. No hay subequipos ni jerarquías: es una unidad cohesionada enfocada en un solo Objetivo de Producto a la vez.</p><ul><li><strong>Product Owner:</strong> responsable de maximizar el valor del producto resultante del trabajo del equipo; gestiona el Product Backlog, define el Objetivo del Producto y prioriza qué se construye.</li><li><strong>Scrum Master:</strong> responsable de que Scrum se entienda y se aplique correctamente. Facilita los eventos, entrena al equipo en autogestión, elimina impedimentos y ayuda a la organización a adoptar el marco.</li><li><strong>Developers:</strong> las personas comprometidas a crear, en cada Sprint, cualquier aspecto de un incremento utilizable; construyen el Sprint Backlog, se adaptan a diario y se responsabilizan mutuamente como profesionales.</li></ul><p>Estos tres roles se profundizarán con más detalle —especialmente Product Owner y Developers— en la semana 7.</p>
+  </div>
+</details>
+<details class="story" id="tema-4" style="--accent-open:var(--accent-violet)">
+  <summary>
+    <span class="story-index">04</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Eventos de Scrum</h3>
+    <span class="point-badge" style="--point-color:var(--accent-amber); --point-bg:var(--accent-amber)22" title="Puntos de historia (extensión relativa del tema)">5</span>
+  </summary>
+  <div class="story-body">
+    <p>Los eventos de Scrum crean regularidad y minimizan la necesidad de reuniones no previstas. El <strong>Sprint</strong> es el contenedor de todos los demás: un evento de duración fija de un mes o menos, dentro del cual ocurre todo lo necesario para avanzar hacia el Objetivo del Producto.</p><table class='mini-table'><thead><tr><th>Evento</th><th>Duración máxima</th><th>Propósito</th></tr></thead><tbody><tr><td>Sprint</td><td>1 mes</td><td>Contenedor de todo el trabajo; empieza inmediatamente después de terminar el anterior.</td></tr><tr><td>Sprint Planning</td><td>8 horas (Sprint de 1 mes)</td><td>Definir qué se hará en el Sprint y cómo, respondiendo por qué, qué y cómo.</td></tr><tr><td>Daily Scrum</td><td>15 minutos</td><td>Inspeccionar el progreso hacia el Objetivo del Sprint y ajustar el plan para las próximas 24 horas.</td></tr><tr><td>Sprint Review</td><td>4 horas (Sprint de 1 mes)</td><td>Mostrar el incremento a los interesados y decidir próximas adaptaciones.</td></tr><tr><td>Sprint Retrospective</td><td>3 horas (Sprint de 1 mes)</td><td>Identificar qué mejorar en personas, procesos y herramientas para el próximo Sprint.</td></tr></tbody></table><p>Solo el <strong>Product Owner</strong> tiene autoridad para cancelar un Sprint, y únicamente si el Objetivo del Sprint queda obsoleto.</p>
+  </div>
+</details>
+<details class="story" id="tema-5" style="--accent-open:var(--accent-violet)">
+  <summary>
+    <span class="story-index">05</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Artefactos de Scrum y sus compromisos</h3>
+    <span class="point-badge" style="--point-color:var(--accent-amber); --point-bg:var(--accent-amber)22" title="Puntos de historia (extensión relativa del tema)">5</span>
+  </summary>
+  <div class="story-body">
+    <p>Los artefactos representan trabajo o valor, y cada uno lleva asociado un <strong>compromiso</strong> que refuerza la transparencia y da un punto de comparación para medir el progreso.</p><table class='mini-table'><thead><tr><th>Artefacto</th><th>Qué es</th><th>Compromiso asociado</th></tr></thead><tbody><tr><td>Product Backlog</td><td>Lista emergente y ordenada de todo lo que se necesita para mejorar el producto; es la única fuente de trabajo del equipo.</td><td>Objetivo del Producto</td></tr><tr><td>Sprint Backlog</td><td>El Objetivo del Sprint, los elementos del Product Backlog elegidos para el Sprint y el plan para entregarlos.</td><td>Objetivo del Sprint</td></tr><tr><td>Increment</td><td>Un peldaño concreto y utilizable hacia el Objetivo del Producto, que se suma a los incrementos anteriores.</td><td>Definición de "Terminado" (Definition of Done)</td></tr></tbody></table><p>La <strong>Definición de Terminado</strong> es la descripción formal y compartida de qué debe cumplir cualquier trabajo para considerarse completo: crea un entendimiento común de qué significa "listo", y si un elemento no la cumple, no puede presentarse como incremento ni liberarse; vuelve al Product Backlog.</p>
+  </div>
+</details>
+  </div>
+
+  <nav class="week-pager">
+    <a class="pager-link prev" href="semana4.html"><span class="dir">← Anterior</span><span class="pt">Semana 4 · Organización del Trabajo y Gestión de Incidencias</span></a>
+    <a class="pager-link next" href="semana6.html"><span class="dir">Siguiente →</span><span class="pt">Semana 6 · Historias de Usuario</span></a>
+  </nav>
+
+  <footer class="site-footer">
+    <span>Diario de Ingeniería · Metodologías Ágiles en el Desarrollo de Software</span>
+    <span>Semana 5 de 7</span>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semana 4 · Organización del Trabajo y Gestión de Incidencias — Diario de Ingeniería</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <span class="brand-path"><a href="index.html">Diario de Ingeniería</a><span class="sep">/</span><span class="current">Semana 4</span></span>
+    </div>
+    <div class="crumbs">ITI · Grupo 1</div>
+  </div>
+
+  <a class="back-link" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Volver a la tabla de semanas</a>
+
+  <header class="week-header" style="--accent:var(--accent-teal)">
+    <span class="ticket-id" style="color:var(--accent-teal)">SEMANA-04 · Herramientas de trabajo ágil</span>
+    <h1>Organización del Trabajo y Gestión de Incidencias</h1>
+    <p class="lede">Herramientas concretas para organizar el día a día de un equipo: tableros Kanban, la técnica Pomodoro y los gestores de incidencias.</p>
+    <div class="week-tags"><span class="tag">Kanban</span><span class="tag">Pomodoro</span><span class="tag">KanbanFlow</span><span class="tag">Incidencias</span></div>
+  </header>
+
+  <div class="backlog-label">
+    Temario
+    <button id="expand-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">expandir todo</button>
+    ·
+    <button id="collapse-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">colapsar todo</button>
+  </div>
+
+  <div class="backlog">
+    <details class="story" id="tema-1" style="--accent-open:var(--accent-teal)">
+  <summary>
+    <span class="story-index">01</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Kanban: organizar el trabajo visualmente</h3>
+    <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+  </summary>
+  <div class="story-body">
+    <p><strong>Kanban</strong> es un método visual para gestionar tareas. Cada tarea se representa como una tarjeta que se coloca en un tablero dividido en columnas según su estado; la versión más simple usa tres columnas: <code class='inline'>To do → In progress → Done</code>. A medida que avanza el trabajo, la tarjeta se arrastra de una columna a la siguiente.</p><p>Kanban se apoya en dos ideas centrales: <strong>visualizar el trabajo</strong> (de un vistazo se ve qué falta, qué se está haciendo y qué ya terminó) y <strong>limitar el trabajo en progreso</strong> (fijar un máximo de tareas simultáneas en "En progreso" para concentrarse en terminar antes de empezar algo nuevo —la regla que evita dejar diez cosas a medias).</p>
+  </div>
+</details>
+<details class="story" id="tema-2" style="--accent-open:var(--accent-teal)">
+  <summary>
+    <span class="story-index">02</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>La técnica Pomodoro</h3>
+    <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">2</span>
+  </summary>
+  <div class="story-body">
+    <p>Creada por Francesco Cirillo en los años 80, la técnica <strong>Pomodoro</strong> propone trabajar en bloques de tiempo enfocados llamados "pomodoros" (por el temporizador de cocina con esa forma que usó su creador).</p><table class='mini-table'><thead><tr><th>Fase</th><th>Duración</th></tr></thead><tbody><tr><td>Pomodoro (trabajo enfocado, sin interrupciones)</td><td>25 minutos</td></tr><tr><td>Descanso corto</td><td>5 minutos</td></tr><tr><td>Descanso largo (después de 4 pomodoros)</td><td>15 a 30 minutos</td></tr></tbody></table>
+  </div>
+</details>
+<details class="story" id="tema-3" style="--accent-open:var(--accent-teal)">
+  <summary>
+    <span class="story-index">03</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>KanbanFlow: la herramienta que une ambas técnicas</h3>
+    <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">2</span>
+  </summary>
+  <div class="story-body">
+    <p><strong>KanbanFlow</strong> es una aplicación web gratuita que combina un tablero Kanban con un temporizador Pomodoro integrado en cada tarjeta. Funciona en el navegador y en el celular; su plan gratuito ofrece tableros y tareas ilimitados, lo que la hace muy práctica para organizar tanto el trabajo académico como el de un equipo real.</p><div class='callout' style='--callout-color:var(--accent-teal)'><span class='callout-label'>Consejos prácticos</span>Dividir el trabajo en tareas pequeñas y concretas ("validar el campo de correo", no "terminar el proyecto") · respetar los descansos, porque el cerebro los necesita para mantener el rendimiento · empezar con un límite WIP sencillo (por ejemplo, máximo 2 tarjetas en "En progreso") y ajustarlo con la experiencia · usar el pomodoro como recordatorio de enfoque, no como una carrera contra el reloj.</div>
+  </div>
+</details>
+<details class="story" id="tema-4" style="--accent-open:var(--accent-teal)">
+  <summary>
+    <span class="story-index">04</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Gestores de incidencias</h3>
+    <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+  </summary>
+  <div class="story-body">
+    <p>Un <strong>gestor de incidencias</strong> es una herramienta centrada en administrar el flujo de trabajo de un proyecto, no exclusiva del desarrollo de software. Una <em>incidencia</em> es cualquier evento que deba atenderse durante el desarrollo: una tarea, una acción, la corrección de un problema, un error o una deficiencia detectada en un producto de trabajo.</p><p>Entre sus funciones principales están:</p><ul><li><strong>Registro</strong> de incidencias a medida que surgen.</li><li><strong>Clasificación y priorización</strong> según su nivel de repercusión: crítico, alto, moderado, bajo o despreciable.</li><li><strong>Asignación de responsabilidades</strong>, natural en proyectos con más de un participante.</li><li><strong>Seguimiento y actualización</strong> del estado de cada incidencia.</li><li><strong>Notificaciones y alertas</strong> sobre fechas próximas o entregas atrasadas.</li><li><strong>Reportes y análisis</strong> para vigilar la salud general del flujo de trabajo.</li><li><strong>Historial y documentación</strong>: constancia de qué se hizo, quién lo hizo y cuándo.</li></ul><p>En conjunto, estas herramientas —Kanban, Pomodoro y los gestores de incidencias— son el complemento operativo de cualquier metodología ágil: dan visibilidad y disciplina al trabajo diario, mientras que la <strong>Guía de Scrum</strong>, presentada también esta semana como material de referencia, empieza a introducir el marco teórico que se profundizará en la semana siguiente.</p>
+  </div>
+</details>
+  </div>
+
+  <nav class="week-pager">
+    <a class="pager-link prev" href="semana3.html"><span class="dir">← Anterior</span><span class="pt">Semana 3 · Metodologías para el Desarrollo de Software</span></a>
+    <a class="pager-link next" href="semana5.html"><span class="dir">Siguiente →</span><span class="pt">Semana 5 · Fundamentos Teóricos de Scrum</span></a>
+  </nav>
+
+  <footer class="site-footer">
+    <span>Diario de Ingeniería · Metodologías Ágiles en el Desarrollo de Software</span>
+    <span>Semana 4 de 7</span>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

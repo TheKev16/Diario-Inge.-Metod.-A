@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semana 3 · Metodologías para el Desarrollo de Software — Diario de Ingeniería</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <span class="brand-path"><a href="index.html">Diario de Ingeniería</a><span class="sep">/</span><span class="current">Semana 3</span></span>
+    </div>
+    <div class="crumbs">ITI · Grupo 1</div>
+  </div>
+
+  <a class="back-link" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Volver a la tabla de semanas</a>
+
+  <header class="week-header" style="--accent:var(--accent-sage)">
+    <span class="ticket-id" style="color:var(--accent-sage)">SEMANA-03 · Unidad II · Metodologías de Desarrollo</span>
+    <h1>Metodologías para el Desarrollo de Software</h1>
+    <p class="lede">El ciclo de vida del software y las dos grandes familias de metodologías que lo organizan: tradicionales y ágiles.</p>
+    <div class="week-tags"><span class="tag">Ciclo de vida</span><span class="tag">Cascada / V / Espiral</span><span class="tag">Manifiesto ágil</span></div>
+  </header>
+
+  <div class="backlog-label">
+    Temario
+    <button id="expand-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">expandir todo</button>
+    ·
+    <button id="collapse-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">colapsar todo</button>
+  </div>
+
+  <div class="backlog">
+    <details class="story" id="tema-1" style="--accent-open:var(--accent-sage)">
+  <summary>
+    <span class="story-index">01</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Ciclo de vida del software (SDLC)</h3>
+    <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+  </summary>
+  <div class="story-body">
+    <p>El <strong>ciclo de vida del software</strong> (SDLC, por sus siglas en inglés) es el proceso estructurado que describe las etapas del desarrollo, desde la concepción de la idea hasta el retiro del sistema. Da un marco metodológico para planificar, construir, probar y desplegar productos de software, con objetivos claros: producir software de calidad que cumpla los requerimientos, minimizar riesgos y costos, mejorar la eficiencia del proceso, facilitar la comunicación entre stakeholders y mantener control sobre el proyecto.</p><table class='mini-table'><thead><tr><th>Fase</th><th>Qué se hace</th></tr></thead><tbody><tr><td>Análisis de requerimientos</td><td>Recopilar necesidades funcionales y no funcionales, analizar viabilidad, definir alcance y validar con stakeholders.</td></tr><tr><td>Diseño del sistema</td><td>Definir la arquitectura, el diseño de base de datos, las interfaces de usuario y los módulos que compondrán la solución.</td></tr><tr><td>Implementación / Codificación</td><td>Configurar el entorno de desarrollo, programar los módulos, integrarlos y revisarlos.</td></tr><tr><td>Pruebas</td><td>Verificar que el software cumple los requerimientos y detectar defectos antes de liberarlo.</td></tr><tr><td>Despliegue</td><td>Preparar el entorno de producción, migrar datos, instalar y configurar el sistema, y capacitar a los usuarios.</td></tr><tr><td>Mantenimiento</td><td>Corregir errores (correctivo), adaptarse a cambios del entorno (adaptativo), mejorar funcionalidad (perfectivo) y prevenir problemas futuros (preventivo).</td></tr></tbody></table>
+  </div>
+</details>
+<details class="story" id="tema-2" style="--accent-open:var(--accent-sage)">
+  <summary>
+    <span class="story-index">02</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Metodologías tradicionales</h3>
+    <span class="point-badge" style="--point-color:var(--accent-amber); --point-bg:var(--accent-amber)22" title="Puntos de historia (extensión relativa del tema)">5</span>
+  </summary>
+  <div class="story-body">
+    <p>Las <strong>metodologías tradicionales</strong> (o predictivas) siguen un enfoque secuencial, con documentación extensa, planificación detallada desde el inicio y roles claramente definidos. Funcionan bien cuando los requerimientos son estables, pero son rígidas frente al cambio.</p><table class='mini-table'><thead><tr><th>Modelo</th><th>Idea central</th><th>Cuándo conviene</th></tr></thead><tbody><tr><td>Cascada (Waterfall)</td><td>Cada fase se completa por completo antes de pasar a la siguiente; no hay retroceso.</td><td>Proyectos con requerimientos muy estables y bien definidos.</td></tr><tr><td>Modelo en V</td><td>Extiende la cascada asociando cada fase de desarrollo con una fase de prueba correspondiente.</td><td>Proyectos donde la verificación y validación temprana son prioritarias.</td></tr><tr><td>Espiral</td><td>Combina desarrollo iterativo con gestión sistemática de riesgos, en ciclos de planificación, análisis de riesgo, ingeniería y evaluación.</td><td>Proyectos grandes, complejos o innovadores con alta incertidumbre.</td></tr><tr><td>Prototipado</td><td>Se construyen versiones preliminares (desechables, evolutivas o incrementales) para validar con usuarios antes del producto final.</td><td>Cuando los requerimientos no están claros desde el inicio.</td></tr></tbody></table><p>El riesgo compartido de estos modelos es la <strong>detección tardía de errores</strong> y la entrega tardía de valor: si algo estaba mal entendido, suele descubrirse recién al final del proyecto, cuando corregirlo es más caro.</p>
+  </div>
+</details>
+<details class="story" id="tema-3" style="--accent-open:var(--accent-sage)">
+  <summary>
+    <span class="story-index">03</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Metodologías ágiles y el Manifiesto Ágil</h3>
+    <span class="point-badge" style="--point-color:var(--accent-amber); --point-bg:var(--accent-amber)22" title="Puntos de historia (extensión relativa del tema)">5</span>
+  </summary>
+  <div class="story-body">
+    <p>Las <strong>metodologías ágiles</strong> surgieron como respuesta a las limitaciones de los modelos tradicionales, priorizando la adaptabilidad, la colaboración constante y la entrega rápida de valor. Su punto de partida formal es el <strong>Manifiesto Ágil</strong>, escrito en 2001 por 17 expertos en desarrollo de software —entre ellos Kent Beck, Martin Fowler y Jeff Sutherland— como alternativa al modelo en cascada.</p><div class='callout' style='--callout-color:var(--accent-sage)'><span class='callout-label'>Los cuatro valores del Manifiesto Ágil</span>Individuos e interacciones <em>sobre</em> procesos y herramientas · Software funcionando <em>sobre</em> documentación extensiva · Colaboración con el cliente <em>sobre</em> negociación contractual · Respuesta ante el cambio <em>sobre</em> seguir un plan.</div><p>A partir de estos valores se derivan principios como la entrega temprana y frecuente de software funcionando, aceptar cambios de requerimientos incluso en etapas avanzadas, la comunicación cara a cara, la excelencia técnica, la simplicidad y los equipos autoorganizados.</p><p>Dentro de la familia ágil existen varias metodologías concretas: <strong>Scrum</strong> (la más detallada, con roles, artefactos y eventos propios —tema central de las semanas siguientes), <strong>Kanban</strong> (un sistema visual de flujo continuo sin sprints fijos), <strong>XP o Extreme Programming</strong> (enfocado en prácticas de ingeniería como TDD y programación en parejas), <strong>Design Sprint</strong> (proceso de 5 días de Google Ventures para validar ideas) y otras como Lean, FDD o DSDM.</p><p>Como actividad aplicada de esta semana se revisó también un <strong>caso de sistema de facturación</strong>, identificando sus problemas, recursos disponibles y stakeholders afectados, como ejercicio previo a decidir qué metodología convendría aplicar.</p>
+  </div>
+</details>
+  </div>
+
+  <nav class="week-pager">
+    <a class="pager-link prev" href="semana2.html"><span class="dir">← Anterior</span><span class="pt">Semana 2 · Gestión de Proyectos y Ética Profesional</span></a>
+    <a class="pager-link next" href="semana4.html"><span class="dir">Siguiente →</span><span class="pt">Semana 4 · Organización del Trabajo y Gestión de Incidencias</span></a>
+  </nav>
+
+  <footer class="site-footer">
+    <span>Diario de Ingeniería · Metodologías Ágiles en el Desarrollo de Software</span>
+    <span>Semana 3 de 7</span>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

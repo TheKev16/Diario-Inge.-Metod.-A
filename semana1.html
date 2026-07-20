@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semana 1 · Fundamentos de la Ingeniería de Software — Diario de Ingeniería</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <span class="brand-path"><a href="index.html">Diario de Ingeniería</a><span class="sep">/</span><span class="current">Semana 1</span></span>
+    </div>
+    <div class="crumbs">ITI · Grupo 1</div>
+  </div>
+
+  <a class="back-link" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Volver a la tabla de semanas</a>
+
+  <header class="week-header" style="--accent:var(--accent-violet)">
+    <span class="ticket-id" style="color:var(--accent-violet)">SEMANA-01 · Unidad I · Ingeniería de Software</span>
+    <h1>Fundamentos de la Ingeniería de Software</h1>
+    <p class="lede">Primer acercamiento a la disciplina: qué es, de dónde viene, por qué existe y qué busca lograr en cualquier proyecto de software.</p>
+    <div class="week-tags"><span class="tag">Definiciones</span><span class="tag">Historia</span><span class="tag">Deuda técnica</span><span class="tag">Caso Boeing 737 MAX</span></div>
+  </header>
+
+  <div class="backlog-label">
+    Temario
+    <button id="expand-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">expandir todo</button>
+    ·
+    <button id="collapse-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">colapsar todo</button>
+  </div>
+
+  <div class="backlog">
+    <details class="story" id="tema-1" style="--accent-open:var(--accent-violet)">
+  <summary>
+    <span class="story-index">01</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>¿Qué es la Ingeniería de Software?</h3>
+    <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">2</span>
+  </summary>
+  <div class="story-body">
+    <p>Según el <strong>IEEE</strong>, la Ingeniería de Software es la aplicación de un enfoque sistemático, disciplinado y cuantificable al desarrollo, operación y mantenimiento del software; en otras palabras, aplicar los principios de la ingeniería tradicional a la construcción de programas. No se trata solo de escribir código, sino de hacerlo con métodos, control de calidad y previsibilidad, tal como se construye un puente o un edificio.</p><p>Es la disciplina de la informática que tiene como precepto principal elaborar software de <strong>calidad</strong>, aplicando métodos de ingeniería durante todo el ciclo de vida: desarrollo, mantenimiento y evolución del producto.</p>
+  </div>
+</details>
+<details class="story" id="tema-2" style="--accent-open:var(--accent-violet)">
+  <summary>
+    <span class="story-index">02</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Historia de la Ingeniería de Software</h3>
+    <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+  </summary>
+  <div class="story-body">
+    <p>Antes de hablar de ingeniería, conviene distinguir los conceptos base: el <strong>hardware</strong> son los componentes físicos de la computadora; el <strong>software</strong> es el conjunto intangible de instrucciones, programas y datos que hace que ese hardware funcione como se desea; un <strong>programa</strong> es un subconjunto del software (el software puede estar formado por uno o varios programas); y un <strong>algoritmo</strong> es la secuencia precisa, definida y finita de instrucciones que le da funcionalidad a un programa.</p><p>A diferencia de disciplinas milenarias como la medicina o la ingeniería civil, la computación es una ingeniería muy joven: no alcanza un siglo de existencia. En sus primeros años, el software se consideraba un componente secundario; se creía que el elemento clave para el buen funcionamiento de una computadora era el hardware y su mantenimiento.</p><ul><li><strong>Años 30:</strong> se sientan las bases teóricas de la computación moderna con máquinas como la de Turing y la analítica de Babbage.</li><li><strong>Años 40:</strong> impulsados por la Segunda Guerra Mundial, surgen las primeras computadoras (como el ENIAC en 1945): enormes, lentas y de propósito específico. También nace el transistor.</li><li><strong>Años 50:</strong> aparecen los primeros lenguajes de programación de alto nivel, como Fortran y COBOL, que sustituyen al tedioso lenguaje ensamblador.</li><li><strong>Años 60:</strong> llegan computadoras más compactas como la IBM 360 y el software empieza a usarse en empresas y universidades. Aquí se ubica el nacimiento de la Ingeniería de Software como disciplina.</li></ul><p>La disciplina se formalizó entre 1960 y 1970 como respuesta a la llamada <strong>Crisis del Software</strong>: proyectos que nunca se terminaban, sistemas poco confiables y costos que se disparaban dos o tres veces por encima del presupuesto original. A esto se sumó una complejidad creciente —el hardware avanzaba más rápido que la capacidad de producir software para aprovecharlo— y la necesidad de sistematizar el trabajo con métodos predecibles, control de calidad y estándares. De ahí nació una disciplina que combina rigor técnico, creatividad y gestión de proyectos complejos.</p>
+  </div>
+</details>
+<details class="story" id="tema-3" style="--accent-open:var(--accent-violet)">
+  <summary>
+    <span class="story-index">03</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Importancia de la Ingeniería de Software</h3>
+    <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+  </summary>
+  <div class="story-body">
+    <p>Hoy prácticamente todo funciona con software: transferencias bancarias, reservas de vuelos, autos autónomos. Un error pequeño puede causar caos —una app bancaria que congela cuentas— y uno grave puede poner vidas en riesgo, como ocurre con software médico defectuoso.</p><div class='callout' style='--callout-color:var(--accent-coral)'><span class='callout-label'>Caso de estudio</span>El caso <strong>Boeing 737 MAX</strong>, discutido en clase mediante video, ilustra las consecuencias reales de fallas de ingeniería de software en sistemas críticos, y plantea preguntas éticas sobre quién es responsable: ¿la empresa, los desarrolladores o los operadores?</div><p>Una de las razones centrales por las que esta disciplina importa es la <strong>deuda técnica</strong>: el costo del retrabajo adicional que se genera al elegir la solución más rápida en vez de la más efectiva (término acuñado por Ward Cunningham en 1992). Se clasifica en cuatro tipos según sea deliberada o inadvertida, y prudente o imprudente:</p><table class='mini-table'><thead><tr><th>Tipo</th><th>Descripción</th></tr></thead><tbody><tr><td>Prudente y deliberada</td><td>Se decide entregar rápido y asumir las consecuencias después; razonable cuando lo que está en juego es poco.</td></tr><tr><td>Imprudente y deliberada</td><td>Se sabe cómo hacer buen código pero se prioriza la velocidad de entrega por encima de la calidad.</td></tr><tr><td>Prudente e inadvertida</td><td>Se buscaba el mejor código, pero se descubre una mejor solución después de implementar.</td></tr><tr><td>Imprudente e inadvertida</td><td>El equipo intenta hacer bien las cosas pero no tiene el conocimiento necesario y ni siquiera es consciente de sus errores.</td></tr></tbody></table><p>Según un estudio de Stripe y Harris Poll (2018), el desarrollador promedio dedica alrededor del <strong>42% de su tiempo</strong> a lidiar con deuda técnica y mantenimiento —cerca de 18 de 41 horas semanales— entre corrección de bugs, refactorización y mantenimiento reactivo. Solo el 32% del tiempo se destina a construir funcionalidades nuevas.</p>
+  </div>
+</details>
+<details class="story" id="tema-4" style="--accent-open:var(--accent-violet)">
+  <summary>
+    <span class="story-index">04</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Objetivos de la Ingeniería de Software</h3>
+    <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">2</span>
+  </summary>
+  <div class="story-body">
+    <p>No todo software necesita aplicar ingeniería de software con el mismo rigor: se recomienda especialmente para productos de gran envergadura, con muchos usuarios o con alto riesgo asociado. No es lo mismo desarrollar un blog personal que un sistema bancario o una red social que maneja información sensible de millones de personas.</p><p>En el fondo, la Ingeniería de Software es una disciplina orientada a la <strong>gestión de riesgos</strong> —económicos, legales, sociales, operativos y tecnológicos— dentro de un proyecto. Requiere tiempo e inversión precisamente para minimizar esos riesgos, y es lo que diferencia a un programador de un verdadero ingeniero de software capaz de liderar un proyecto con calidad garantizada.</p>
+  </div>
+</details>
+  </div>
+
+  <nav class="week-pager">
+    <span class="pager-link prev disabled"><span class="dir">← Anterior</span><span class="pt">—</span></span>
+    <a class="pager-link next" href="semana2.html"><span class="dir">Siguiente →</span><span class="pt">Semana 2 · Gestión de Proyectos y Ética Profesional</span></a>
+  </nav>
+
+  <footer class="site-footer">
+    <span>Diario de Ingeniería · Metodologías Ágiles en el Desarrollo de Software</span>
+    <span>Semana 1 de 7</span>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

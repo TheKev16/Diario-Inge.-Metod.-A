@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semana 6 · Historias de Usuario — Diario de Ingeniería</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <span class="brand-path"><a href="index.html">Diario de Ingeniería</a><span class="sep">/</span><span class="current">Semana 6</span></span>
+    </div>
+    <div class="crumbs">ITI · Grupo 1</div>
+  </div>
+
+  <a class="back-link" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Volver a la tabla de semanas</a>
+
+  <header class="week-header" style="--accent:var(--accent-amber)">
+    <span class="ticket-id" style="color:var(--accent-amber)">SEMANA-06 · Unidad III · Metodología Scrum</span>
+    <h1>Historias de Usuario</h1>
+    <p class="lede">Cómo capturar lo que el usuario realmente necesita: del marco Scrum al backlog de producto, con ejemplos de buenas y malas historias.</p>
+    <div class="week-tags"><span class="tag">Formato Como/quiero/para</span><span class="tag">INVEST</span><span class="tag">Criterios de aceptación</span></div>
+  </header>
+
+  <div class="backlog-label">
+    Temario
+    <button id="expand-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">expandir todo</button>
+    ·
+    <button id="collapse-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">colapsar todo</button>
+  </div>
+
+  <div class="backlog">
+    <details class="story" id="tema-1" style="--accent-open:var(--accent-amber)">
+  <summary>
+    <span class="story-index">01</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>¿Qué es una historia de usuario?</h3>
+    <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">2</span>
+  </summary>
+  <div class="story-body">
+    <p>Una <strong>historia de usuario</strong> es una descripción breve y sencilla de una funcionalidad, contada desde la perspectiva de quien desea ese valor —normalmente un usuario o cliente del sistema—. No es una especificación técnica ni un contrato cerrado: es una invitación a conversar.</p><p>En Scrum es la unidad de trabajo más común del Product Backlog: el Product Owner las prioriza, el equipo las estima y, durante la Sprint Planning, se convierten en incremento. Una buena historia responde a tres preguntas: <strong>quién</strong> necesita algo, <strong>qué</strong> necesita y <strong>para qué</strong> lo necesita; el <em>cómo</em> se decide después, en equipo.</p>
+  </div>
+</details>
+<details class="story" id="tema-2" style="--accent-open:var(--accent-amber)">
+  <summary>
+    <span class="story-index">02</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>La plantilla clásica</h3>
+    <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">2</span>
+  </summary>
+  <div class="story-body">
+    <p>El formato estándar es: <strong>Como [rol], quiero [funcionalidad], para [beneficio]</strong>.</p><ul><li><strong>Como [rol]:</strong> un actor concreto —recepcionista, veterinario, dueño de mascota—, nunca un "usuario" genérico.</li><li><strong>Quiero [funcionalidad]:</strong> la acción o capacidad deseada, descrita en lenguaje natural.</li><li><strong>Para [beneficio]:</strong> el porqué. Si no se puede completar el "para...", la historia quizá no aporta valor real.</li></ul><div class='callout' style='--callout-color:var(--accent-amber)'><span class='callout-label'>Ejemplo</span>"Como recepcionista, quiero registrar una nueva mascota con los datos de su dueño, para tener su historial disponible en futuras visitas."</div>
+  </div>
+</details>
+<details class="story" id="tema-3" style="--accent-open:var(--accent-amber)">
+  <summary>
+    <span class="story-index">03</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Las tres C: Card, Conversation, Confirmation</h3>
+    <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+  </summary>
+  <div class="story-body">
+    <p>Propuestas por Ron Jeffries, las <strong>tres C</strong> resumen el ciclo de vida de una historia:</p><table class='mini-table'><thead><tr><th>C</th><th>Significado</th></tr></thead><tbody><tr><td>Card (Tarjeta)</td><td>La historia escrita de forma breve; cabe en una tarjeta porque es un recordatorio, no toda la documentación.</td></tr><tr><td>Conversation (Conversación)</td><td>El diálogo entre el equipo y el Product Owner para aclarar detalles y alcance; aquí vive el verdadero contenido.</td></tr><tr><td>Confirmation (Confirmación)</td><td>Los criterios de aceptación: cómo se sabrá que la historia está terminada y funciona como se esperaba.</td></tr></tbody></table>
+  </div>
+</details>
+<details class="story" id="tema-4" style="--accent-open:var(--accent-amber)">
+  <summary>
+    <span class="story-index">04</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Criterios INVEST para reconocer una buena historia</h3>
+    <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+  </summary>
+  <div class="story-body">
+    <p>Bill Wake propuso el acrónimo <strong>INVEST</strong> para evaluar la calidad de una historia de usuario:</p><table class='mini-table'><thead><tr><th>Letra</th><th>Criterio</th></tr></thead><tbody><tr><td>I</td><td>Independiente: se desarrolla y entrega sin depender de otra historia.</td></tr><tr><td>N</td><td>Negociable: no es un contrato rígido, se discute en equipo.</td></tr><tr><td>V</td><td>Valiosa: aporta valor visible al usuario o al negocio.</td></tr><tr><td>E</td><td>Estimable: el equipo puede estimar el esfuerzo que requiere.</td></tr><tr><td>S</td><td>Pequeña (Small): cabe cómodamente dentro de un sprint.</td></tr><tr><td>T</td><td>Testeable: tiene criterios que permiten verificarla.</td></tr></tbody></table>
+  </div>
+</details>
+<details class="story" id="tema-5" style="--accent-open:var(--accent-amber)">
+  <summary>
+    <span class="story-index">05</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Criterios de aceptación: Dado / Cuando / Entonces</h3>
+    <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+  </summary>
+  <div class="story-body">
+    <p>Los <strong>criterios de aceptación</strong> son las condiciones que deben cumplirse para dar una historia por terminada; convierten algo ambiguo en algo verificable, usando la estructura <strong>Dado</strong> (un contexto inicial) — <strong>Cuando</strong> (ocurre una acción del usuario) — <strong>Entonces</strong> (el sistema responde de forma específica y observable).</p><div class='callout' style='--callout-color:var(--accent-amber)'><span class='callout-label'>Ejemplo — historia "registrar una nueva mascota"</span><strong>Camino feliz:</strong> Dado que soy recepcionista autenticada, cuando completo los campos obligatorios y presiono Guardar, entonces el sistema crea el registro y muestra confirmación.<br><br><strong>Validación:</strong> Dado que dejo vacío un campo obligatorio, cuando intento guardar, entonces el sistema muestra un error y no crea el registro.</div>
+  </div>
+</details>
+<details class="story" id="tema-6" style="--accent-open:var(--accent-amber)">
+  <summary>
+    <span class="story-index">06</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Buenas y malas historias: el caso de la clínica veterinaria</h3>
+    <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+  </summary>
+  <div class="story-body">
+    <p>Como caso aplicado se trabajaron historias para una clínica veterinaria, todas bien formadas: registrar una mascota (recepcionista), consultar el historial clínico (veterinario), recibir un recordatorio de vacuna (dueño de mascota) y generar un reporte de ingresos mensuales (administrador).</p><p>También se identificaron <strong>antipatrones</strong> frecuentes: escribir un requisito técnico disfrazado de historia ("el sistema debe usar MySQL", sin rol ni valor para el usuario), una historia vaga y no testeable ("como usuario, quiero un sistema rápido"), una historia sin rol ni beneficio ("hacer el login"), o una historia demasiado grande que no cumple con ser <em>Small</em> y debería dividirse ("módulo completo de reportes con 15 gráficos").</p>
+  </div>
+</details>
+<details class="story" id="tema-7" style="--accent-open:var(--accent-amber)">
+  <summary>
+    <span class="story-index">07</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Estimación con puntos de historia</h3>
+    <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">2</span>
+  </summary>
+  <div class="story-body">
+    <p>En Scrum no se estima en horas exactas, sino en una medida relativa: se comparan las historias entre sí usando una secuencia tipo Fibonacci (1, 2, 3, 5, 8, 13, 21) que refleja la incertidumbre creciente a mayor tamaño.</p><p>La técnica más común para esto es el <strong>Planning Poker</strong>: el Product Owner presenta la historia y resuelve dudas, cada persona elige en secreto una carta con su estimación, todos revelan a la vez, quienes tengan los valores extremos explican su razonamiento, y se repite hasta lograr consenso. Los puntos no son horas: sirven para comparar historias entre sí y para que el equipo descubra su propio ritmo —la velocidad— sprint tras sprint.</p>
+  </div>
+</details>
+  </div>
+
+  <nav class="week-pager">
+    <a class="pager-link prev" href="semana5.html"><span class="dir">← Anterior</span><span class="pt">Semana 5 · Fundamentos Teóricos de Scrum</span></a>
+    <a class="pager-link next" href="semana7.html"><span class="dir">Siguiente →</span><span class="pt">Semana 7 · Roles del Scrum Team: Product Owner y Developers</span></a>
+  </nav>
+
+  <footer class="site-footer">
+    <span>Diario de Ingeniería · Metodologías Ágiles en el Desarrollo de Software</span>
+    <span>Semana 6 de 7</span>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semana 11 · Repaso de XP y Evaluación Corta — Diario de Ingeniería</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <span class="brand-path"><a href="index.html">Diario de Ingeniería</a><span class="sep">/</span><span class="current">Semana 11</span></span>
+    </div>
+    <div class="crumbs">ITI · Grupo 1</div>
+  </div>
+
+  <a class="back-link" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Volver a la tabla de semanas</a>
+
+  <header class="week-header" style="--accent:var(--accent-sage)">
+    <span class="ticket-id" style="color:var(--accent-sage)">SEMANA-11 · Unidad IV · Extreme Programming (repaso)</span>
+    <h1>Repaso de XP y Evaluación Corta</h1>
+    <p class="lede">Sesión de repaso de la metodología XP antes de la prueba corta: se condensan los valores, las prácticas y los roles vistos la semana anterior en un formato de consulta rápida.</p>
+    <div class="week-tags"><span class="tag">Repaso</span><span class="tag">Prueba corta</span><span class="tag">Glosario ágil</span></div>
+  </header>
+
+  <div class="backlog-label">
+    Temario
+    <button id="expand-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">expandir todo</button>
+    ·
+    <button id="collapse-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">colapsar todo</button>
+  </div>
+
+  <div class="backlog">
+    <details class="story" id="tema-1" style="--accent-open:var(--accent-sage)">
+  <summary>
+    <span class="story-index">01</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Repaso rápido: los valores y principios de XP</h3>
+    <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+  </summary>
+  <div class="story-body">
+    <p>Antes de la prueba corta, conviene tener frescas las ideas centrales de XP en su forma más condensada. Los <strong>cinco valores</strong> —comunicación, simplicidad, retroalimentación, coraje y respeto— son la brújula de cualquier decisión dentro del marco: ante una duda sobre cómo proceder, la pregunta es cuál de estos valores está en juego.</p><p>De ahí se desprenden los <strong>principios</strong> que conectan esos valores con la práctica diaria: retroalimentación rápida, suponer simplicidad, cambio incremental, abrazar el cambio, trabajo de calidad, enseñar y aprender, viaje compartido, ritmo sostenible y experimentos concretos. Vale la pena repasar, para cada uno, un ejemplo concreto de cómo se vería aplicado en un proyecto real —esa es, justamente, la forma en que suelen plantearse las preguntas de evaluación: no "¿qué es la simplicidad?", sino "¿qué principio de XP ilustra esta situación?".</p>
+  </div>
+</details>
+<details class="story" id="tema-2" style="--accent-open:var(--accent-sage)">
+  <summary>
+    <span class="story-index">02</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Repaso rápido: las 12 prácticas por categoría</h3>
+    <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+  </summary>
+  <div class="story-body">
+    <p>El segundo bloque a repasar son las doce prácticas, agrupadas en las mismas cuatro categorías vistas la semana pasada:</p><table class="mini-table"><thead><tr><th>Categoría</th><th>Prácticas a repasar</th></tr></thead><tbody><tr><td>Planificación</td><td>Planning Game · Entregas pequeñas · Metáfora del sistema</td></tr><tr><td>Diseño</td><td>Diseño simple · Refactorización · TDD</td></tr><tr><td>Codificación</td><td>Programación en parejas · Propiedad colectiva · Estándares de código</td></tr><tr><td>Integración y operación</td><td>Integración continua · Ritmo sostenible · Cliente integrado</td></tr></tbody></table><p>Un buen ejercicio de autoevaluación es, para cada práctica, poder explicarla en una sola oración y dar un ejemplo de cómo se vería en el proyecto del curso: por ejemplo, "hacemos integración continua cuando cada integrante sube su código al repositorio compartido y lo probamos junto con el de los demás antes de dar una tarea por terminada".</p>
+  </div>
+</details>
+<details class="story" id="tema-3" style="--accent-open:var(--accent-sage)">
+  <summary>
+    <span class="story-index">03</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Preparándose para la prueba corta</h3>
+    <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">2</span>
+  </summary>
+  <div class="story-body">
+    <p>Como actividad de cierre de la semana se aplicó una <strong>prueba corta</strong> sobre la metodología XP. Los materiales de apoyo señalados para repasar antes de la evaluación fueron una introducción breve a XP en inglés ("Extreme Programming: A Gentle Introduction"), el glosario ágil en la sección correspondiente a Extreme Programming, y una guía introductoria adicional para principiantes sobre el método ágil.</p><div class="callout" style="--callout-color:var(--accent-sage)"><span class="callout-label">Qué repasar antes de una prueba corta de XP</span>La diferencia entre <strong>valores</strong> (los cinco: comunicación, simplicidad, retroalimentación, coraje, respeto) y <strong>prácticas</strong> (las doce, agrupadas en 4 categorías) · qué problema resuelve cada práctica concreta (por ejemplo, qué previene la integración continua) · en qué se parecen y en qué se diferencian XP y Scrum · y en qué tipo de proyecto conviene usar XP frente a cuándo conviene pensarlo dos veces.</div>
+  </div>
+</details>
+  </div>
+
+  <nav class="week-pager">
+    <a class="pager-link prev" href="semana10.html"><span class="dir">← Anterior</span><span class="pt">Semana 10 · Extreme Programming (XP)</span></a>
+    <span class="pager-link next disabled"><span class="dir">Siguiente →</span><span class="pt">—</span></span>
+  </nav>
+
+  <footer class="site-footer">
+    <span>Diario de Ingeniería · Metodologías Ágiles en el Desarrollo de Software</span>
+    <span>Semana 11 de 11</span>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semana 9 · La Retrospectiva y los Artefactos: el mapa completo — Diario de Ingeniería</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <span class="brand-path"><a href="index.html">Diario de Ingeniería</a><span class="sep">/</span><span class="current">Semana 9</span></span>
+    </div>
+    <div class="crumbs">ITI · Grupo 1</div>
+  </div>
+
+  <a class="back-link" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Volver a la tabla de semanas</a>
+
+  <header class="week-header" style="--accent:var(--accent-amber)">
+    <span class="ticket-id" style="color:var(--accent-amber)">SEMANA-09 · Unidad III · Metodología Scrum (cierre)</span>
+    <h1>La Retrospectiva y los Artefactos: el mapa completo</h1>
+    <p class="lede">Sesión de refuerzo y cierre: se profundiza en la Retrospectiva como evento de mejora continua y se repasan los tres artefactos con sus compromisos, cerrando así el mapa completo de la Guía de Scrum.</p>
+    <div class="week-tags"><span class="tag">Retrospectiva</span><span class="tag">Artefactos</span><span class="tag">Empirismo</span></div>
+  </header>
+
+  <div class="backlog-label">
+    Temario
+    <button id="expand-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">expandir todo</button>
+    ·
+    <button id="collapse-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">colapsar todo</button>
+  </div>
+
+  <div class="backlog">
+    <details class="story" id="tema-1" style="--accent-open:var(--accent-amber)">
+      <summary>
+        <span class="story-index">01</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+        <h3>La Retrospectiva y el cierre del ciclo</h3>
+        <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">5</span>
+      </summary>
+      <div class="story-body">
+        <p>La <strong>Retrospectiva</strong> existe para planificar formas de aumentar la calidad y la efectividad: el equipo inspecciona cómo fue el sprint y decide cómo mejorar. Lo que inspecciona son las personas, las interacciones, los procesos, las herramientas y la propia Definition of Done —el <em>proceso</em>, no el producto—, y participa el Scrum Team completo (Developers, Product Owner y Scrum Master), sin stakeholders. Ocurre al final de cada sprint, después de la Review, y cierra el ciclo antes del siguiente Planning; su producto son mejoras concretas y accionables, idealmente incorporadas ya al sprint siguiente.</p>
+        <table class="mini-table">
+          <thead><tr><th>Sprint Review</th><th>Sprint Retrospective</th></tr></thead>
+          <tbody>
+            <tr><td>Inspecciona el Incremento (el producto)</td><td>Inspecciona el proceso (cómo trabajamos)</td></tr>
+            <tr><td>Participan Scrum Team + stakeholders</td><td>Participa solo el Scrum Team</td></tr>
+            <tr><td>Adapta el Product Backlog</td><td>Adapta la forma de trabajar (incluida la DoD)</td></tr>
+            <tr><td>Sesión de trabajo, no una simple demo</td><td>Espacio protegido, con confianza</td></tr>
+            <tr><td>Pregunta central: ¿construimos lo correcto?</td><td>Pregunta central: ¿trabajamos de la forma correcta?</td></tr>
+          </tbody>
+        </table>
+        <div class="callout" style="--callout-color:var(--accent-amber)"><span class="callout-label">La directiva primaria (Norm Kerth)</span>"Independientemente de lo que descubramos, entendemos y creemos sinceramente que cada uno hizo el mejor trabajo posible con lo que sabía y tenía en ese momento." Se recomienda leerla en voz alta antes de empezar cualquier retrospectiva: se critican procesos y conductas, nunca a las personas.</div>
+        <p>Existen varias técnicas para facilitarla, y cada equipo puede usar la que mejor le calce: <strong>Start · Stop · Continue</strong> (tres columnas —empezar / dejar / seguir— es la más directa y produce acuerdos accionables rápido; ojo con la columna "dejar", ahí suele vivir la verdad incómoda), la <strong>Estrella de Mar</strong> (cinco zonas —seguir / más de esto / menos de esto / empezar / dejar— que capturan matices, como cosas que funcionan pero en la dosis equivocada) y las <strong>4Ls</strong> (me gustó / aprendí / faltó / deseé, ideal para cierres de proyecto porque equilibra lo emocional y lo racional).</p>
+        <p>La prueba de calidad de una retrospectiva es que sus salidas sean mejoras <em>accionables</em>, no simples deseos. "Comunicarnos mejor" o "ser más responsables" no sirven: nadie sabrá la próxima semana si se cumplieron y se olvidan al salir del aula. En cambio, "actualizar el tablero todos los días antes de las 5 p.m., responsable: todo el equipo, verifica: el Scrum Master cada viernes" sí sirve: es concreta, tiene dueño, tiene fecha y es verificable —se hizo o no se hizo—. La regla de oro: es mejor salir con dos mejoras que sí se van a aplicar, que con veinte que nadie va a recordar.</p>
+      </div>
+    </details>
+
+    <details class="story" id="tema-2" style="--accent-open:var(--accent-amber)">
+      <summary>
+        <span class="story-index">02</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+        <h3>Los artefactos y sus compromisos: el mapa completo</h3>
+        <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">5</span>
+      </summary>
+      <div class="story-body">
+        <p>Los artefactos representan trabajo o valor y existen para maximizar la <strong>transparencia</strong>: cualquiera que los mire debe ver lo mismo. Desde la Guía Scrum 2020, cada uno tiene asociado un <strong>compromiso</strong> —una meta que le da foco y permite medir el progreso—, que funciona como su criterio de honestidad: sin ese compromiso, el artefacto degenera en una lista de deseos, un lote de tareas o una promesa vacía. Un Product Backlog sin objetivo es solo una lista de deseos; un Sprint sin objetivo es solo un montón de tareas; un "Incremento" sin Definition of Done es solo una promesa.</p>
+        <table class="mini-table">
+          <thead><tr><th>Artefacto</th><th>Compromiso</th><th>En una frase</th></tr></thead>
+          <tbody>
+            <tr><td>Product Backlog</td><td>Objetivo del Producto</td><td>La meta a largo plazo que da coherencia a la lista: describe un estado futuro del producto.</td></tr>
+            <tr><td>Sprint Backlog</td><td>Objetivo del Sprint</td><td>El porqué del sprint: la razón que une los elementos elegidos y guía el plan diario.</td></tr>
+            <tr><td>Incremento</td><td>Definition of Done</td><td>El criterio compartido de "terminado": sin DoD cumplida, el incremento no existe.</td></tr>
+          </tbody>
+        </table>
+        <p>El Sprint Backlog —el artefacto que pertenece a los Developers— tiene, en realidad, tres partes: el <strong>porqué</strong> (el Objetivo del Sprint, la meta única que da sentido al sprint; se fija en el Planning y no cambia durante el sprint), el <strong>qué</strong> (los elementos del Product Backlog seleccionados para ese sprint; el alcance puede renegociarse con el PO sin tocar el objetivo) y el <strong>cómo</strong> (el plan de acción para entregar el incremento, que es de los Developers y se ajusta todos los días en el Daily).</p>
+        <p>El <strong>Incremento</strong> es aditivo (cada uno funciona junto con todos los anteriores; se apila, no se rompe), es usable (alguien podría usarlo hoy: "casi funciona" no es un incremento, es trabajo en proceso que vuelve al backlog), solo existe si cumple la DoD (la Definition of Done es la frontera entre el trabajo y el valor; no hay "90% terminado") y puede entregarse antes del fin del sprint (la Sprint Review nunca debería ser la única puerta de salida: el valor se libera cuando está listo).</p>
+      </div>
+    </details>
+
+    <details class="story" id="tema-3" style="--accent-open:var(--accent-amber)">
+      <summary>
+        <span class="story-index">03</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+        <h3>Por qué todo lo demás existe: empirismo y valores</h3>
+        <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+      </summary>
+      <div class="story-body">
+        <p>Como cierre de la Unidad III, se repasa el porqué detrás de todo el marco: el <strong>empirismo</strong> y sus tres pilares —<strong>transparencia</strong> (el estado real del trabajo es visible para todos: artefactos vivos, tablero al día, DoD compartida, sin maquillaje), <strong>inspección</strong> (examinar con frecuencia para detectar desvíos a tiempo; los cuatro eventos son las inspecciones formales de Scrum) y <strong>adaptación</strong> (corregir cuanto antes lo que se desvió: el plan, el proceso o el producto; inspeccionar sin adaptar es solo la mitad del trabajo)—. Los tres se encadenan: sin transparencia, la inspección se engaña a sí misma; y adaptar con datos falsos empeora las cosas en vez de mejorarlas.</p>
+        <p>Y se repasan también los cinco valores que sostienen a las personas dentro del marco: <strong>compromiso</strong> (con los objetivos del equipo y con apoyarse mutuamente; ej.: cumplir la DoD aunque cueste), <strong>foco</strong> (en el trabajo del sprint y su objetivo; ej.: decir "todavía no" a mitad de sprint), <strong>apertura</strong> (franqueza sobre el trabajo y sus dificultades; ej.: admitir un bloqueo en el Daily), <strong>respeto</strong> (personas capaces e independientes; ej.: en la retro se critica el proceso, no a la gente) y <strong>coraje</strong> (hacer lo correcto ante lo difícil; ej.: el PO que dice "no", dar malas noticias a tiempo). Con roles, eventos y artefactos ya vistos, el mapa de la Guía Scrum queda completo.</p>
+      </div>
+    </details>
+  </div>
+
+  <nav class="week-pager">
+    <a class="pager-link prev" href="semana8.html"><span class="dir">← Anterior</span><span class="pt">Semana 8 · El Scrum Master y los Eventos como Sistema</span></a>
+    <a class="pager-link next" href="semana10.html"><span class="dir">Siguiente →</span><span class="pt">Semana 10 · Extreme Programming (XP)</span></a>
+  </nav>
+
+  <footer class="site-footer">
+    <span>Diario de Ingeniería · Metodologías Ágiles en el Desarrollo de Software</span>
+    <span>Semana 9 de 11</span>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

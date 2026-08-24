@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semana 8 · El Scrum Master y los Eventos como Sistema — Diario de Ingeniería</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <span class="brand-path"><a href="index.html">Diario de Ingeniería</a><span class="sep">/</span><span class="current">Semana 8</span></span>
+    </div>
+    <div class="crumbs">ITI · Grupo 1</div>
+  </div>
+
+  <a class="back-link" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Volver a la tabla de semanas</a>
+
+  <header class="week-header" style="--accent:var(--accent-violet)">
+    <span class="ticket-id" style="color:var(--accent-violet)">SEMANA-08 · Unidad III · Metodología Scrum (cierre)</span>
+    <h1>El Scrum Master y los Eventos como Sistema</h1>
+    <p class="lede">El último rol del Scrum Team y una mirada de conjunto a los cuatro eventos: por qué existen y cómo se encadenan para sostener la transparencia, la inspección y la adaptación.</p>
+    <div class="week-tags"><span class="tag">Scrum Master</span><span class="tag">Eventos</span><span class="tag">Inicio del proyecto</span></div>
+  </header>
+
+  <div class="backlog-label">
+    Temario
+    <button id="expand-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">expandir todo</button>
+    ·
+    <button id="collapse-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">colapsar todo</button>
+  </div>
+
+  <div class="backlog">
+    <details class="story" id="tema-1" style="--accent-open:var(--accent-violet)">
+      <summary>
+        <span class="story-index">01</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+        <h3>El Scrum Master: líder al servicio</h3>
+        <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+      </summary>
+      <div class="story-body">
+        <p>El <strong>Scrum Master</strong> —el tercer rol del Scrum Team— es un líder al servicio del equipo y de la organización: responsable de que Scrum se entienda, se aplique y funcione. La forma más rápida de entender el rol es por lo que <strong>no</strong> es: no es un jefe (no asigna tareas ni evalúa personas, no hay jerarquía sobre el equipo), no es un secretario (documentar reuniones no es su función, facilitar que sirvan sí), no es un mensajero (no lleva recados entre el equipo y el PO, los ayuda a hablar directo) y su autoridad es siempre sobre el proceso, nunca sobre las personas.</p>
+        <p>Es un rol que sirve en tres direcciones a la vez:</p>
+        <ul>
+          <li><strong>Sirve a los Developers:</strong> los coachea en autogestión y multifuncionalidad, los ayuda a enfocarse en incrementos de valor y causa la eliminación de impedimentos.</li>
+          <li><strong>Sirve al Product Owner:</strong> le ayuda con técnicas para definir el Objetivo del Producto y gestionar el backlog, y facilita la colaboración con los stakeholders.</li>
+          <li><strong>Sirve a la organización:</strong> lidera la adopción de Scrum y remueve barreras entre stakeholders y equipos —en el contexto del curso, gestiona con el docente lo que el equipo no puede resolver por sí mismo.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="story" id="tema-2" style="--accent-open:var(--accent-violet)">
+      <summary>
+        <span class="story-index">02</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+        <h3>La frontera del rol y el matiz de los impedimentos</h3>
+        <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">5</span>
+      </summary>
+      <div class="story-body">
+        <table class="mini-table">
+          <thead><tr><th>Sí hace</th><th>No hace</th></tr></thead>
+          <tbody>
+            <tr><td>Facilita los eventos cuando se le pide o hace falta</td><td>Asignar o repartir tareas "para ser eficientes"</td></tr>
+            <tr><td>Enseña a mantener el Daily en 15 minutos</td><td>Dirigir el Daily ni tomar asistencia</td></tr>
+            <tr><td>Causa la remoción de impedimentos</td><td>Resolverlo todo él mismo (genera dependencia)</td></tr>
+            <tr><td>Protege al equipo de interrupciones externas</td><td>Reportar el desempeño individual a un superior</td></tr>
+            <tr><td>Fomenta que el equipo resuelva sus propios conflictos</td><td>Imponer decisiones técnicas o de producto</td></tr>
+          </tbody>
+        </table>
+        <p>El matiz que distingue a un buen Scrum Master está en cómo maneja los impedimentos: <strong>removerlos no es lo mismo que absorberlos</strong>. Primero el equipo intenta resolverlo internamente ("¿quién del equipo puede ayudar con esto?"); si el impedimento supera al equipo, el SM consigue el recurso, contacto o decisión externa que hace falta; lo que nunca debe pasar es que el SM lo resuelva en silencio "para ir rápido" —eso es absorberlo, y el equipo no aprende nada. La meta es que el impedimento desaparezca <em>y</em> que el equipo quede más capaz que antes de enfrentarlo.</p>
+        <div class="callout" style="--callout-color:var(--accent-coral)"><span class="callout-label">Cinco formas de arruinar el rol</span>El <strong>jefe encubierto</strong> (asigna tareas y presenta él los resultados, anula la autogestión) · el <strong>secretario de actas</strong> (documenta todo, no facilita nada) · el <strong>ausente</strong> (confunde autogestión con abandono) · el <strong>héroe</strong> (resuelve todo él; el equipo avanza hasta el día que él falta) · el <strong>policía del proceso</strong> (aplica Scrum como código penal, sin adaptación, matando la mejora continua).</div>
+        <p>La síntesis del rol se resume en una idea que suena contraintuitiva: <strong>el éxito del Scrum Master se mide al revés</strong>. "Cuanto menos lo necesita el equipo para funcionar, mejor hizo su trabajo." Un equipo cada vez más autónomo es la evidencia de un gran Scrum Master; la dependencia es la evidencia de lo contrario.</p>
+      </div>
+    </details>
+
+    <details class="story" id="tema-3" style="--accent-open:var(--accent-violet)">
+      <summary>
+        <span class="story-index">03</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+        <h3>Los eventos de Scrum como sistema</h3>
+        <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+      </summary>
+      <div class="story-body">
+        <p>Los cuatro eventos no son "reuniones": cada uno es una oportunidad formal de <strong>inspeccionar</strong> algo y <strong>adaptarlo</strong>. Quitarlos elimina los momentos de corrección de rumbo del proyecto. Como sistema, se sostienen en las mismas cuatro ideas que ya se vieron con los pilares del empirismo, aplicadas ahora a nivel de calendario: transparencia (el trabajo y su estado son visibles: tablero, backlog, incremento a la vista), inspección (se revisa con frecuencia el avance hacia los objetivos acordados), adaptación (si algo se desvía, se ajusta cuanto antes: el plan, el producto o el proceso) y regularidad (el Sprint contiene a todos los demás eventos y reduce la necesidad de reuniones improvisadas).</p>
+      </div>
+    </details>
+
+    <details class="story" id="tema-4" style="--accent-open:var(--accent-violet)">
+      <summary>
+        <span class="story-index">04</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+        <h3>Sprint Planning y Daily Scrum, con lupa</h3>
+        <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">5</span>
+      </summary>
+      <div class="story-body">
+        <p>El <strong>Sprint Planning</strong> es el punto de partida del sprint y responde tres preguntas en orden: <strong>¿por qué?</strong> este sprint —el equipo define el Objetivo del Sprint, la razón por la que vale la pena este ciclo—; <strong>¿qué</strong> se puede hacer? —los Developers seleccionan del Product Backlog lo que cabe según su capacidad, nadie se los impone—; y <strong>¿cómo</strong> se hará? —descomponen el trabajo en tareas y nace el Sprint Backlog—. Su resultado es el Objetivo del Sprint más el Sprint Backlog, con la participación del Scrum Team completo, en un timebox máximo de 8 horas para un sprint de un mes.</p>
+        <p>El <strong>Daily Scrum</strong> son 15 minutos que "salvan" el sprint: su propósito es inspeccionar el avance hacia el Objetivo del Sprint y adaptar el plan del día. Es un evento <em>de</em> los Developers —se hablan entre ellos, no le reportan a nadie—; el Scrum Master vela por que ocurra, pero no lo dirige. Su timebox es fijo (15 minutos, sin importar el tamaño del equipo) y los temas largos que surjan continúan después del evento, solo con los involucrados: el Daily detecta problemas, no los resuelve todos ahí mismo.</p>
+        <div class="callout" style="--callout-color:var(--accent-violet)"><span class="callout-label">Prueba de fuego</span>Si el Scrum Master o el profesor no llegan un día… ¿el Daily ocurre igual? Debería. Si depende de que alguien lo convoque o lo dirija, no se ha entendido todavía que es un evento de los Developers, no una reunión de estatus hacia un superior.</div>
+        <p>Existen tres errores típicos que vacían de sentido al Daily: <strong>el reporte al jefe</strong> (cada quien recita "ayer hice…" mirando al Scrum Master o al profesor, nadie escucha a los demás), <strong>la reunión técnica eterna</strong> (dos personas depuran código 40 minutos mientras el resto mira el celular) y <strong>el ritual vacío</strong> (frases genéricas, cero impedimentos mencionados, tablero congelado: se cumple la forma pero murió el propósito). El antídoto común a los tres es volver a la pregunta esencial: ¿vamos a cumplir el Objetivo del Sprint, sí o no, y qué ajustamos hoy?</p>
+      </div>
+    </details>
+
+    <details class="story" id="tema-5" style="--accent-open:var(--accent-violet)">
+      <summary>
+        <span class="story-index">05</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+        <h3>Sprint Review y Sprint Retrospective, con lupa</h3>
+        <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">5</span>
+      </summary>
+      <div class="story-body">
+        <p>El <strong>Sprint Review</strong> inspecciona el <strong>producto</strong>: el Scrum Team presenta el Incremento resultante del sprint a los stakeholders y se discute el progreso hacia el Objetivo del Producto. No es una simple demo, sino una sesión de trabajo real donde se recoge retroalimentación genuina y se decide qué conviene hacer a continuación; lo que se adapta con esa información es el Product Backlog, que el PO reordena o ajusta. Timebox máximo: 4 horas para un sprint de un mes.</p>
+        <p>El <strong>Sprint Retrospective</strong> inspecciona el <strong>proceso</strong>: personas, interacciones, procesos, herramientas y la propia Definition of Done. Ocurre solo con el Scrum Team, a puerta cerrada y sin stakeholders, porque hace falta confianza para hablar con honestidad de lo que no funcionó. Lo que se adapta es la forma de trabajar: de ahí deberían salir mejoras concretas, idealmente aplicadas ya en el siguiente sprint. Timebox máximo: 3 horas para un sprint de un mes.</p>
+        <p>Una forma sencilla de no confundirlos: <strong>Review = producto, con stakeholders. Retrospective = proceso, en familia.</strong></p>
+        <table class="mini-table">
+          <thead><tr><th>Evento</th><th>Inspecciona</th><th>Adapta</th><th>Participantes</th><th>Timebox*</th></tr></thead>
+          <tbody>
+            <tr><td>Sprint Planning</td><td>Product Backlog y capacidad</td><td>Crea Sprint Backlog y Objetivo</td><td>Scrum Team completo</td><td>Máx. 8 h</td></tr>
+            <tr><td>Daily Scrum</td><td>Avance hacia el Objetivo del Sprint</td><td>El plan del día</td><td>Developers</td><td>15 min</td></tr>
+            <tr><td>Sprint Review</td><td>El Incremento (producto)</td><td>El Product Backlog</td><td>Scrum Team + stakeholders</td><td>Máx. 4 h</td></tr>
+            <tr><td>Sprint Retrospective</td><td>El proceso y la DoD</td><td>La forma de trabajar</td><td>Scrum Team</td><td>Máx. 3 h</td></tr>
+          </tbody>
+        </table>
+        <p>* Para un sprint de 1 mes. Con sprints de 1 semana —como en este curso—, los tiempos se reducen proporcionalmente: Planning ≈ 2 h, Review ≈ 1 h, Retrospective ≈ 45 min. El Daily siempre dura 15 minutos, sin importar la duración del sprint.</p>
+        <p>Esta semana el equipo también dio <strong>inicio formal al proyecto</strong> aplicando la metodología Scrum de punta a punta, con estos cuatro eventos como columna vertebral del trabajo semanal.</p>
+      </div>
+    </details>
+  </div>
+
+  <nav class="week-pager">
+    <a class="pager-link prev" href="semana7.html"><span class="dir">← Anterior</span><span class="pt">Semana 7 · Roles del Scrum Team: Product Owner y Developers</span></a>
+    <a class="pager-link next" href="semana9.html"><span class="dir">Siguiente →</span><span class="pt">Semana 9 · La Retrospectiva y los Artefactos: el mapa completo</span></a>
+  </nav>
+
+  <footer class="site-footer">
+    <span>Diario de Ingeniería · Metodologías Ágiles en el Desarrollo de Software</span>
+    <span>Semana 8 de 11</span>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

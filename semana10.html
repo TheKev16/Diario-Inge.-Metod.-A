@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semana 10 · Extreme Programming (XP) — Diario de Ingeniería</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <span class="brand-path"><a href="index.html">Diario de Ingeniería</a><span class="sep">/</span><span class="current">Semana 10</span></span>
+    </div>
+    <div class="crumbs">ITI · Grupo 1</div>
+  </div>
+
+  <a class="back-link" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Volver a la tabla de semanas</a>
+
+  <header class="week-header" style="--accent:var(--accent-teal)">
+    <span class="ticket-id" style="color:var(--accent-teal)">SEMANA-10 · Unidad IV · Extreme Programming</span>
+    <h1>Extreme Programming (XP)</h1>
+    <p class="lede">Una metodología ágil que lleva las buenas prácticas de ingeniería de software al extremo: calidad técnica al máximo y máxima capacidad de respuesta al cambio.</p>
+    <div class="week-tags"><span class="tag">Valores de XP</span><span class="tag">12 prácticas</span><span class="tag">TDD</span><span class="tag">Pair Programming</span></div>
+  </header>
+
+  <div class="backlog-label">
+    Temario
+    <button id="expand-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">expandir todo</button>
+    ·
+    <button id="collapse-all" style="all:unset;cursor:pointer;color:var(--ink-muted)">colapsar todo</button>
+  </div>
+
+  <div class="backlog">
+    <details class="story" id="tema-1" style="--accent-open:var(--accent-teal)">
+  <summary>
+    <span class="story-index">01</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>¿Qué es Extreme Programming?</h3>
+    <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">2</span>
+  </summary>
+  <div class="story-body">
+    <p><strong>Extreme Programming (XP)</strong> es una metodología ágil de desarrollo de software centrada en la flexibilidad, la colaboración cercana con el cliente y la entrega rápida de software funcional. Su objetivo principal es mejorar la calidad del software y la capacidad de respuesta ante cambios en los requisitos, especialmente en proyectos con alta incertidumbre.</p><p>Fue creada por <strong>Kent Beck</strong> a finales de los años 90, en el proyecto C3 de Chrysler (1996); su libro fundacional se publicó en 1999. Parte de una idea simple: si ciertas prácticas de ingeniería son beneficiosas, aplicarlas al máximo —al extremo— produce mejores resultados. En una frase: "hacer software de la forma más simple que funcione hoy, con la mayor calidad posible, y mejorarlo con cada cambio". Es ideal para equipos pequeños y cohesionados (2 a 12 personas) con requisitos que cambian rápido.</p><p>XP nace para resolver problemas concretos: requisitos que cambian (el cliente no sabe todo al inicio, lo que pide hoy cambia mañana, y los planes rígidos se rompen), el costo del cambio tardío (en modelos tradicionales, corregir un error tarde cuesta muchísimo más que corregirlo temprano), la baja calidad interna (código sin pruebas ni orden se vuelve frágil) y la poca comunicación (documentación pesada que nadie lee, en vez de conversación directa entre personas).</p>
+  </div>
+</details>
+<details class="story" id="tema-2" style="--accent-open:var(--accent-teal)">
+  <summary>
+    <span class="story-index">02</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Los cinco valores de XP</h3>
+    <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+  </summary>
+  <div class="story-body">
+    <p>XP se fundamenta en cinco valores que funcionan como brújula: guían las decisiones cuando las reglas no alcanzan.</p><table class="mini-table"><thead><tr><th>Valor</th><th>En qué consiste</th></tr></thead><tbody><tr><td>Comunicación</td><td>Privilegiar la conversación cara a cara sobre la documentación extensa; el cliente está disponible para resolver dudas al instante.</td></tr><tr><td>Simplicidad</td><td>Hacer lo más simple que funcione hoy, sin construir para un futuro que quizás no llegue (principio YAGNI: "You Aren't Gonna Need It").</td></tr><tr><td>Retroalimentación</td><td>Cuanto antes se sabe si algo funciona, más barato es corregirlo: pruebas automáticas, entregas frecuentes y participación activa del cliente.</td></tr><tr><td>Coraje</td><td>Valentía para tomar decisiones técnicas difíciles: refactorizar o tirar código que ya no sirve, decir la verdad sobre el avance.</td></tr><tr><td>Respeto</td><td>Todos los miembros aportan valor y merecen ser escuchados; es la base que hace posibles a los otros cuatro valores.</td></tr></tbody></table>
+  </div>
+</details>
+<details class="story" id="tema-3" style="--accent-open:var(--accent-teal)">
+  <summary>
+    <span class="story-index">03</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Principios de XP</h3>
+    <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">5</span>
+  </summary>
+  <div class="story-body">
+    <p>Los principios conectan los valores con las prácticas concretas del día a día:</p><ul><li><strong>Retroalimentación rápida:</strong> ciclos cortos de feedback entre desarrolladores, clientes y el sistema para detectar problemas pronto (TDD, lanzamientos frecuentes, dailies).</li><li><strong>Suponer simplicidad:</strong> diseñar la solución más simple que funcione hoy, siguiendo YAGNI y refactorizando constantemente.</li><li><strong>Cambio incremental:</strong> hacer cambios pequeños y reversibles en lugar de grandes rediseños.</li><li><strong>Abrazar el cambio:</strong> aceptar cambios en los requisitos incluso en fases avanzadas, con diseño modular y priorización según necesidades actuales.</li><li><strong>Trabajo de calidad:</strong> la calidad no se negocia nunca; se sostiene con TDD, integración continua y programación en parejas.</li><li><strong>Enseñar y aprender:</strong> compartir conocimiento en el equipo mediante programación en parejas, propiedad colectiva y retrospectivas.</li><li><strong>Viaje compartido:</strong> equipo de desarrollo y cliente son compañeros con objetivos alineados, no "ellos contra nosotros".</li><li><strong>Ritmo sostenible:</strong> la productividad a largo plazo requiere equilibrio; límite de 40 horas semanales, sin horas extra sistemáticas.</li><li><strong>Experimentos concretos:</strong> en vez de debatir teóricamente, se prueba directamente en código (spikes técnicos, A/B testing).</li></ul>
+  </div>
+</details>
+<details class="story" id="tema-4" style="--accent-open:var(--accent-teal)">
+  <summary>
+    <span class="story-index">04</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Las 12 prácticas fundamentales de XP</h3>
+    <span class="point-badge" style="--point-color:var(--accent-teal); --point-bg:var(--accent-teal)22" title="Puntos de historia (extensión relativa del tema)">8</span>
+  </summary>
+  <div class="story-body">
+    <p>XP se concreta en doce prácticas agrupadas en cuatro categorías:</p><table class="mini-table"><thead><tr><th>Categoría</th><th>Prácticas</th></tr></thead><tbody><tr><td>Planificación</td><td>Planning Game (Juego de planificación), Entregas pequeñas y frecuentes, Metáfora del sistema</td></tr><tr><td>Diseño</td><td>Diseño simple, Refactorización, Pruebas automatizadas (TDD)</td></tr><tr><td>Codificación</td><td>Programación en parejas (Pair Programming), Propiedad colectiva del código, Estándares de código</td></tr><tr><td>Integración y operación</td><td>Integración continua, Ritmo sostenible, Cliente integrado (on-site customer)</td></tr></tbody></table><p>Algunas, en detalle:</p><ul><li><strong>Planning Game:</strong> el cliente escribe historias de usuario en su propio lenguaje; el equipo estima el esfuerzo (con Planning Poker) y el cliente decide la prioridad según el valor de negocio. Se planifica por iteraciones cortas de 1 a 3 semanas, no todo el proyecto de una vez.</li><li><strong>Entregas pequeñas:</strong> poner en producción versiones útiles lo antes posible —por ejemplo v0.1 con login básico en la semana 2, v0.2 con perfil de usuario en la semana 4— para reducir riesgo y obtener retroalimentación temprana.</li><li><strong>TDD (Test-Driven Development):</strong> ciclo <em>rojo → verde → refactor</em>: primero se escribe una prueba que falla, luego el código mínimo que la hace pasar, después se mejora el diseño sin romper las pruebas. Es una red de seguridad que permite cambiar sin miedo.</li><li><strong>Programación en parejas:</strong> dos personas, una computadora; el 'conductor' escribe código mientras el 'navegante' revisa y piensa estratégicamente, rotando los roles. Difunde el conocimiento y detecta errores mientras se escriben.</li><li><strong>Integración continua:</strong> cada cambio se integra y se prueba en un repositorio común varias veces al día, evitando el "infierno de la integración" al final del proyecto.</li><li><strong>Cliente integrado:</strong> un representante del cliente disponible para clarificar requisitos, priorizar en tiempo real y validar demos semanales —en Scrum, este rol lo cumple el Product Owner.</li></ul>
+  </div>
+</details>
+<details class="story" id="tema-5" style="--accent-open:var(--accent-teal)">
+  <summary>
+    <span class="story-index">05</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>Roles y ciclo de vida de un equipo XP</h3>
+    <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">3</span>
+  </summary>
+  <div class="story-body">
+    <p>Un equipo XP distingue varios roles: el <strong>cliente</strong> (define historias, prioridades y valida resultados; es parte del equipo), el <strong>programador</strong> (estima, diseña, programa en parejas y escribe pruebas), el <strong>tester</strong> (ayuda al cliente a definir y ejecutar pruebas de aceptación), el <strong>tracker</strong> (sigue métricas y estimaciones, da retroalimentación sobre el avance real), el <strong>coach</strong> (guía al equipo en la práctica de XP y vela por que se respeten los valores) y el <strong>manager</strong> (provee recursos y facilita la comunicación con el resto de la organización).</p><p>El ciclo de vida de un proyecto XP recorre seis fases: <strong>exploración</strong> (el cliente escribe historias, el equipo prueba la tecnología), <strong>planificación</strong> (se priorizan historias y se acuerda la primera entrega), <strong>iteraciones</strong> (ciclos cortos de diseñar, probar con TDD, programar en parejas e integrar), <strong>producción</strong> (se pone en marcha, con pruebas finales y ajustes de rendimiento), <strong>mantenimiento</strong> (se sigue dando soporte mientras se agregan nuevas historias) y <strong>cierre</strong> (el cliente ya no tiene más historias; se documenta y termina).</p>
+  </div>
+</details>
+<details class="story" id="tema-6" style="--accent-open:var(--accent-teal)">
+  <summary>
+    <span class="story-index">06</span>
+    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+    <h3>XP frente a Scrum, ventajas y cuándo usarla</h3>
+    <span class="point-badge" style="--point-color:var(--accent-sage); --point-bg:var(--accent-sage)22" title="Puntos de historia (extensión relativa del tema)">5</span>
+  </summary>
+  <div class="story-body">
+    <table class="mini-table"><thead><tr><th>Aspecto</th><th>Extreme Programming</th><th>Scrum</th></tr></thead><tbody><tr><td>Enfoque principal</td><td>Prácticas de ingeniería (cómo programar)</td><td>Gestión del trabajo (cómo organizarse)</td></tr><tr><td>Iteraciones</td><td>1 a 3 semanas</td><td>Sprint de 1 a 4 semanas</td></tr><tr><td>Cambios en la iteración</td><td>Admite reordenar prioridades</td><td>El sprint no debería cambiar</td></tr><tr><td>Prescribe cómo programar</td><td>Sí (TDD, parejas, refactor…)</td><td>No lo especifica</td></tr><tr><td>Roles</td><td>Cliente, coach, programador…</td><td>Product Owner, Scrum Master, Devs</td></tr></tbody></table><p>No son excluyentes: muchos equipos usan la gestión de Scrum combinada con las prácticas de ingeniería de XP.</p><div class="callout" style="--callout-color:var(--accent-teal)"><span class="callout-label">Ventajas y desafíos</span><strong>A favor:</strong> software de alta calidad y bien probado, gran capacidad de adaptarse al cambio, retroalimentación temprana y continua, menos errores en producción, conocimiento compartido en el equipo.<br><br><strong>En contra:</strong> exige mucha disciplina del equipo, requiere un cliente muy disponible, es difícil de escalar a equipos grandes o distribuidos, y no todos se adaptan bien a la programación en parejas.</div><p>XP brilla cuando los requisitos cambian con frecuencia, el equipo es pequeño y está co-ubicado, el cliente puede participar activamente y la calidad técnica es crítica. Conviene pensarlo dos veces cuando el equipo es muy grande o distribuido, el cliente no puede involucrarse, o el dominio exige documentación formal extensa (por ejemplo, sectores regulados como banca o salud). Un ejemplo típico: una startup desarrollando un producto nuevo, con requisitos que evolucionan cada semana y un fundador que actúa como cliente presente.</p>
+  </div>
+</details>
+  </div>
+
+  <nav class="week-pager">
+    <a class="pager-link prev" href="semana9.html"><span class="dir">← Anterior</span><span class="pt">Semana 9 · La Retrospectiva y los Artefactos: el mapa completo</span></a>
+    <a class="pager-link next" href="semana11.html"><span class="dir">Siguiente →</span><span class="pt">Semana 11 · Repaso de XP y Evaluación Corta</span></a>
+  </nav>
+
+  <footer class="site-footer">
+    <span>Diario de Ingeniería · Metodologías Ágiles en el Desarrollo de Software</span>
+    <span>Semana 10 de 11</span>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
